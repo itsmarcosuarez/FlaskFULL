@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="col-md-4 offset-md-4">
+  <div class="card card-body">
+  <p class="text-center">Registrarse</p>
+  <form action= "/register" method="POST">
+   <div class="form-group">
+    <input type="text" name="name" placeholder="Nombre"  class="form-control">
+   </div>
+   <div class="form-group">
+     <input type="email" name="email" placeholder="Email"  class="form-control">
+   </div>
+   <div class="form-group">
+     <input type="Password" name="password" placeholder="Contraseña"  class="form-control">
+   </div>
+   <div class="form-group">
+     <button type = "submit" class="btn btn-success btn-block">Registrar</button>
+   </div>
+  </form>
+  </div>
+</div>
+
+{% endblock %}
